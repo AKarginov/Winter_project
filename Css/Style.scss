@@ -1,48 +1,9 @@
 @import "nullstyle.scss";
-.menu {display: inline-block;
+.hello{
+    font-size: 50px;
+    color: rgb(13, 126, 55);
+.world{
+    color: blue;
 }
-
-.menu._active .menu__list{
-    display: block;
 }
-
-.menu._active .menu__button span:first-child{
-    display: none;
-}
-
-.menu__button span:first-child{
-   
-    display: block;
-}
-
-.menu._active .menu__button span:last-child{
-    display: none; 
-}
-
-.menu__button span:last-child{
-    display: none; 
-}
-
-.menu__list {
-    background-color: darkslategray;
-    padding: 15px;
-    & li:not(:last-child){
-        margin: 0 0 15px 0;
-        }
-
-}
-.menu__link {
-    color: white;
-    font-size: 16px;
-}
-
-.menu__link :hover{
-    display: inherit;
-}
-li{
-min-width: 170px;
-float: none;
-display: list-item;
-position: relative;
     
-}
