@@ -1,0 +1,51 @@
+@import "nullstyle.scss";
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap');
+.container{
+    width: 1140px;
+    margin: 0 auto; 
+    position: relative;  
+    }
+.promo{
+    height: 1200px;
+    background:url('../../img/snow_trees.jpg') center center/cover no-repeat;
+}
+.logo__img{
+    width: 150px;
+    display: block;
+    position: relative;
+    margin: auto;
+    top: 50px;
+
+
+}
+.title{
+    font-family: 'Raleway', sans-serif;
+    font-size: 100px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    color: rgb(255, 255, 255);
+    display: inline-block;
+    margin-top: 150px;
+    overflow:visible;
+   
+}
+.promo2{
+    height: 1600px;
+    background:url('../../img/forest_mountain.jpg') center center/cover no-repeat;
+    
+}
+.btn{
+    position: relative;
+    top: 300px;
+    font-family: 'Amatic SC', cursive;
+    font-size: 70px;
+    letter-spacing: 5px;
+    display: block;
+    margin: auto;
+    border: 1px solid black;
+    border-radius: 50px;
+    background-color: rgba(255, 255, 255, 0.052);
+    padding: 30px 200px;
+    
+}
