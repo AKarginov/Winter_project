@@ -59,11 +59,23 @@ body{
         justify-content: space-between;
         margin: 0;
         padding: 0 50px;
-        a{
+        a{  position: relative;
+            line-height: 1;
             color: #ffff;
-            &:hover{
-                color: rgb(0, 0, 0);
-            }
+        }
+        a:after {
+            display: block;
+            position: absolute;
+            left: 0; 
+            width: 0;
+            height: .5px; 
+            background-color: #000000; 
+            content: "";
+            transition: width 0.3s ease-out; 
+        }
+        a:hover:after,
+        a:focus:after {
+            width: 100%; 
         }
     }
 }
@@ -196,12 +208,14 @@ body{
 }
 .signUpForm__formBlock {
     width: 100%;
-    height: auto;
+    
 }
 .signUpForm__form {
-    display: block;
-    
-    margin-top: 10px;
+    height: 9rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* color: white; */
     &:first-child{margin: 0;}
     input{
         width: 25%;
@@ -214,7 +228,9 @@ body{
 
 }
 .signUpForm__button {
-    display: inline-block;
+    width: 5%;
+    height: 20px;
+    display: block;
     margin-top: 10px;
     background-color: rgb(255, 255, 255);
     font-family: 'Raleway', sans-serif;
@@ -315,7 +331,7 @@ body{
 .image-slider__wrapper{
     width: 100%;
     height: 100%;
-    background-color: white;
+    background:rgba(220, 220, 220,0.5);
     /* background:url('../../img/snow_branch.jpg') center center/cover no-repeat; */
     backdrop-filter: blur(8px);
     padding-top: 5em;
@@ -379,12 +395,53 @@ body{
     transform: translateY(-50%);
 
 }
+.final-block {
+    width: 100%;
+    height: 100vh;
+}
+.final-block__wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background:url('../../img/forest_mountain.jpg') center center/cover no-repeat;
 
-
-
+}
+.final-block__confirm-container {
+}
+.footer-block {
+    position: absolute;
+    bottom: 0;
+    padding: 0 5% 0 2%;
+    display: flex;
+    justify-content: space-between;
+    height: 15%;
+    width: 100%;
+    background: rgba($color: #ffffff, $alpha: .2);
+}
+.footer-block-designby{
+    font-family: 'Raleway', sans-serif;
+    font-size: 1em;
+    color: rgb(0, 0, 0);
+   
+}
+.footer-block__SNitems {
+	ul{
+		display: flex;
+		justify-content: left;
+		list-style-type: none;
+    }
+.link__icon{
+	margin: 0 5px;
+		
+	&__image{
+		max-width: 24px;
+		fill: white;
+    }
+}    
+}
 .promo2{
     height: 900px;
-    background:url('../../img/forest_mountain.jpg') center center/cover no-repeat;
+    
     
 }
 .btn{

@@ -62,23 +62,19 @@
             </div>
         </div>
         <div class="signUpForm">
-            <div class="signUpForm__wrapper">
+            <div class="signUpForm__wrapper" id="signUpStructure">
                 <div class="signUpForm__container">
                     <div class="signUpForm__block">
                         <div class="signUpForm__title">sign up for a hike</div>
                         <p class="signUpForm__text">Fill out the form to join us</p>
                         <div class="signUpForm__formBlock">
-                            <form class="signUpForm__form" action="#" method="post">
-                                <input required placeholder="Write your name" type="text">
-                            </form>
-                            <form class="signUpForm__form" action="#" method="post">
-                                <input required placeholder="Write your phone number" type="number">
-                            </form> 
-                            <form class="signUpForm__form" action="#" method="post">
-                                <input required placeholder="Write your email" type="email">
+                            <form class="signUpForm__form"id="signForm" action="#" >
+                                <input name="name" placeholder="Write your name" type="text">
+                                <input name="phone" minlength="4" placeholder="Write your phone number" type="number">
+                                <input name="email" placeholder="Write your email" type="email">
+                                <button name="confirm" class="signUpForm__button">Sent form</button>
                             </form>      
                         </div>
-                        <input class="signUpForm__button" value="Sent form" type="submit">
                     </div>
                 </div>    
             </div>
@@ -117,16 +113,56 @@
                 </div>
             </div>    
         </section>
-        <section class="promo2">
-            <button class="btn">
+        <section class="final-block">
+            <div class="final-block__wrapper">
+                <div class="final-block__confirm-container"></div>
+                    <footer class="footer-block">   
+                        <div class="footer-block__SNitems">
+                            <ul>
+                                <li>
+                                     <a href="#" class="link__icon vk__link">
+                                        <img class="link__icon__image vk__link__item" src="./img/icons/vk_black-logo.svg" alt="none">
+                                     </a>
+                                </li>
+                                 <li>
+                                      <a href="#" class="link__icon instagram__link">
+                                          <img class="link__icon__image instagram__link__item" src="./img/icons/instagram_black-logo.svg" alt="none">
+                                     </a>
+                                </li>
+                                <li>
+                                     <a href="#" class="link__icon youtube__link">
+                                         <img class="link__icon__image youtube__link__item" src="./img/icons/youtube_black-logo.svg" alt="none">
+                                     </a>
+                                </li>
+                                <li>
+                                      <a href="#" class="link__icon pinterest__link">
+                                          <img class="link__icon__image pinterest__link__item" src="./img/icons/pinterest_black-logo.svg" alt="none">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="link__icon twitter__link">
+                                        <img class="link__icon__image twitter__link__item" src="./img/icons/twitter_black-logo.svg" alt="none">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="footer-block-designby">
+                            <p class="designby">®design by Cepius</p>
+                        </div> 
+                    </footer>
+                </div>
+            </div>
+<!--             <button class="btn">
              Watch more 
-            </button>
+            </button> -->
         </section>
 </div>
+
 <script src="https://code.jquery.com/jquery-3.6.2.min.js"></script>
 <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
 <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 <script type="text/javascript" src="./js/slick.min.js"></script>	
 <script src="./js/scrypt.js"></script>
+<script src="./js/jquery.validate.min.js"></script>
 </body>
 </html>

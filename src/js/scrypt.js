@@ -19,5 +19,32 @@ $(document).ready(function(){
       }
     ]
 
-  });
+  }); 
+  $('#signForm').validate(
+    {
+      rules: {
+        // simple rule, converted to {required:true}
+        name: "required",
+        phone: "required",
+        // compound rule
+        email: {
+          required: true,
+          email: true
+        }
+      },
+      messages: {
+        name: "Please specify your name",
+        phone: "Please specify your phone number",
+        email: {
+          required: "We need your email address to contact you",
+          email: "Your email address must be in the format of name@domain.com",
+        }
+      }
+    }
+  );
+$('#signUpStructure form').validate();
+$( '#signForm' ).css( "color", "white" );
+$( '#signForm' ).css( "font-family", "'Raleway', sans-serif");
+$( '#signForm' ).css( "font-size", ".85em");
 });       
+
